@@ -1,0 +1,24 @@
+{
+  "name": "webintelligence",
+  "version": "1.0.0",
+  "description": "A Web Interface for an locally hosted AI.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ratchet205/WebIntelligence.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ratchet205/WebIntelligence/issues"
+  },
+  "homepage": "https://github.com/Ratchet205/WebIntelligence#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "https": "^1.0.0"
+  }
+}
