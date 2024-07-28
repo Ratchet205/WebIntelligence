@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | WebIntelligence</title>
+    <link rel="stylesheet" href="css\index.css">
 </head>
 <body>
-    
+    <div id="container-top"></div>
+    <nav id="container-left">
+        <div id="nav-bar-buttons">
+            <button id="collapseBar"><img src="img/svg/collapse.svg" alt="Collapse Bar" style="width: 100%; height: 100%;"></button>
+            <button id="addChat" onclick="addChat()"><img src="img/svg/addNewChat.svg" alt="Create a Chat" style="width: 100%; height: 100%;"></button>
+        </div>
+        <div id="nav-elements">
+            
+        </div>
+    </nav>
+    <div id="container-right">
+        <div id="chat-input">
+            <input type="text" placeholder="Enter Question" aria-label="Chat Input">
+
+            <button id="sendbtn">
+                <img src="img/svg/send.svg" alt="send-btn ">
+            </button>
+        </div>
+    </div>
 </body>
+<script src="js/index.js"></script>
 </html>
