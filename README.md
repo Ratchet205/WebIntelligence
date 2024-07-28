@@ -1,1 +1,1 @@
-rtet
+A Web Interface for an locally hosted AI.
