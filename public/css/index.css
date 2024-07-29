@@ -164,7 +164,7 @@ button:hover {
 }
 
 .client-chat{
-    width: calc(40% + 40px);
+    width: calc(47% + 40px);
     word-wrap: break-word;
     background-color: #333333;
     padding: 7px 10px;
@@ -183,7 +183,7 @@ button:hover {
     background-position: center;
 }
 .ai-chat{
-    width: calc(40% + 40px);
+    width: calc(47% + 40px);
     word-wrap: break-word;
     background-color: #333333;
     padding: 7px 10px;
