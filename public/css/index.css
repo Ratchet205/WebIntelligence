@@ -5,11 +5,7 @@
     font-size: 18px;
     font-family: arial;
     color:#eee;
-    transition: ease-out 0.2s;
-}
-
-*:hover{
-    transition: ease-in 0.2s;
+    transition: 0.3s;
 }
 
 html{
@@ -84,7 +80,6 @@ button:hover {
 
 #nav-bar-buttons > * > img:hover {
     filter: drop-shadow(0 0 0 orange) drop-shadow(1px 1px 1px orange);
-    transition: 0.1s;
 }
 
 #nav-elements {
@@ -160,13 +155,12 @@ button:hover {
 }
 
 #chats > * {
-    transition: outline-width 0.3s;
+    outline: 0 solid orange;
+    transition: outline-width 0.1ms
 }
 
 #chats > *:hover {
     outline-width: 1px;
-    outline-color: orange;
-    outline-style: solid;
 }
 
 .client-chat{
