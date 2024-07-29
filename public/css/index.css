@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border: 1px dashed red;
+    /*border: 1px dashed red;*/
 }
 html{
     height: 100%;
@@ -24,6 +24,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid black;
 }
 #container-left{
     width: 100%;
@@ -46,6 +47,8 @@ body{
     overflow-y: scroll;
     scroll-behavior: smooth;
     scrollbar-width: thin;
+    border: 1px solid black;
+
 }
 .chat{
     padding: 10px 20px;
@@ -120,4 +123,27 @@ button:hover {
     border: 1px solid #ccc;
     border-radius: 50px;
     color: black;
+}
+#chats{
+    width: 100%;
+    padding: 0 15px;
+    color: white;
+    position: relative;
+    font-size: 0.9em;;
+}
+.client-chat{
+    width: calc(50% + 40px);
+    word-wrap: break-word;
+    background-color: grey;
+    padding: 7px 10px;
+    border-radius: 10px 10px 0 10px;
+    margin: 5px 0 5px auto;
+}
+.ai-chat{
+    width: calc(50% + 40px);
+    word-wrap: break-word;
+    background-color: grey;
+    padding: 7px 10px;
+    border-radius: 10px 10px 10px 0;
+    margin: 10px 0;
 }
