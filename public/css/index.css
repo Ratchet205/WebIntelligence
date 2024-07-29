@@ -2,7 +2,16 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-size: 18px;
+    font-family: arial;
+    color:#eee;
+    transition: ease-out 0.2s;
 }
+
+*:hover{
+    transition: ease-in 0.2s;
+}
+
 html{
     height: 100%;
     width: 100%;
@@ -10,7 +19,7 @@ html{
 body{
     display: grid;
     grid-template-columns: 200px calc(100% - 200px);
-    grid-template-rows: 90px calc(100% - 90px);
+    grid-template-rows: minmax(20px, 90px) calc(100% - 90px);
     grid-template-areas:
     "container-left container-top"
     "container-left container-right";
@@ -19,17 +28,19 @@ body{
 }
 #container-top{
     grid-area: container-top;
-    background-color: white;
+    background-color: #2d2d2d;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+    border: 3px solid #2b2b2b;
 }
 #container-left{
+    z-index: 5;
     width: 100%;
     height: 100%;
     grid-area: container-left;
-    background-color: grey;
+    background-color: #333333;
+    border: 3px solid #313131;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 90px calc(100% - 90px);
@@ -37,17 +48,19 @@ body{
     "nav-bar-buttons"
     "nav-elements";
 }
+
 #container-right{
     grid-area: container-right;
     margin-left: 0%;
     padding: 20px;
-    background-color: lightblue;
+    background-color: #222;
     color: white;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
-    border: 1px solid black;
-
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 97% 3%;
+    grid-template-areas:
+    "chats"
+    "chat-input";
 }
 .chat{
     padding: 10px 20px;
@@ -67,6 +80,11 @@ button:hover {
     width: 100%;
     height: 100%;
     display: flex;
+}
+
+#nav-bar-buttons > * > img:hover {
+    filter: drop-shadow(0 0 0 orange) drop-shadow(1px 1px 1px orange);
+    transition: 0.1s;
 }
 
 #nav-elements {
@@ -105,15 +123,16 @@ button:hover {
     height: auto;
 }
 #chat-input {
+    z-index: 4;
+    grid-area: chat-input;
     position: fixed;
     bottom: 15px;
     left: calc(200px + (100% - 200px) / 2);
     display: flex;
     align-items: center;
-    max-width: 80%;
+    max-width: calc(100% - 220px);
     width: 100%;
     transform: translateX(-50%);
-    overflow-x: visible;
 }
 
 #chat-input textarea {
@@ -121,21 +140,39 @@ button:hover {
     padding: 10px;
     font-size: 16px;
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #111;
     border-radius: 50px;
-    color: black;
+    color: #ccc;
+    resize: none;
+    background-color: #222222;
 }
 #chats{
+    grid-area: chats;
     width: 100%;
     padding: 0 15px;
     color: white;
     position: relative;
-    font-size: 0.9em;;
+    font-size: 0.9em;
+    overflow-y: visible;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    bottom: 15px
 }
+
+#chats > * {
+    transition: outline-width 0.3s;
+}
+
+#chats > *:hover {
+    outline-width: 1px;
+    outline-color: orange;
+    outline-style: solid;
+}
+
 .client-chat{
     width: calc(50% + 40px);
     word-wrap: break-word;
-    background-color: grey;
+    background-color: #333333;
     padding: 7px 10px;
     border-radius: 10px 10px 0 10px;
     margin: 5px 0 5px auto;
@@ -143,7 +180,7 @@ button:hover {
 .ai-chat{
     width: calc(50% + 40px);
     word-wrap: break-word;
-    background-color: grey;
+    background-color: #333333;
     padding: 7px 10px;
     border-radius: 10px 10px 10px 0;
     margin: 10px 0;
