@@ -1,1 +1,1 @@
-A Web Interface for an locally hosted AI.
+A Web Interface for a locally hosted AI.
