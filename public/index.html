@@ -9,36 +9,131 @@
 </head>
 <script src="js/index.js"></script>
 <body>
-    <div id="container-top"></div>
+    <div id="container-top">
+        
+        <div id="navigation">
+            <ul id="options-list">
+                <li>
+                    <a href="#">About</a>
+                    <ul>
+                        <li><a href="html/team">Our Team</a></li>
+                        <li><a href="html/company">Company Info</a></li>
+                        <li><a href="html/careers">Careers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Support</a>
+                    <ul>
+                        <li><a href="html/faq">FAQ</a></li>
+                        <li><a href="html/contact">Contact Us</a></li>
+                        <li><a href="html/ticket">Submit a Ticket</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">License</a>
+                    <ul>
+                        <li><a href="html/terms">Terms of Service</a></li>
+                        <li><a href="html/privacy">Privacy Policy</a></li>
+                        <li><a href="html/licenses">Licenses</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="top-container-pictures">
+            <img src="img/svg/account.svg" alt="profilePic" style="width: 50px;height: 50px;right: 90px; position: absolute;">
+            <img src="img/svg/chatbot.svg" alt="aiIcon" style="width: 50px;height: 50px;right: 30px;position: absolute;">
+        </div>
+    </div>
     <nav id="container-left">
         <div id="nav-bar-buttons">
             <button id="collapseBar"><img src="img/svg/collapse.svg" alt="Collapse Bar" style="width: 100%; height: 100%;"></button>
+            <button onclick="debugChatLoop()" style="color: black; position: absolute; top: 50%; left: 50%;">add chats</button>
             <button id="addChat" onclick="addChat()"><img src="img/svg/addNewChat.svg" alt="Create a Chat" style="width: 100%; height: 100%;"></button>
         </div>
+        
         <div id="nav-elements">
-            
+            <div class="chat-container">
+                <div class="chat-list"> <!-- stupid fuck. -->
+                    <ul id="chat-list-ul">
+                        <li class="chat-item">
+                            <span class="chat-name">Chat1</span>
+                            <span class="chat-icons">
+                                <i class="icon edit-icon">✎</i>
+                                <i class="icon delete-icon">✘</i>
+                            </span>
+
+                        </li>
+                        <li class="chat-item">
+                            <span class="chat-name">Chat2</span>
+                            <span class="chat-icons">
+                                <i class="icon edit-icon">✎</i>
+                                <i class="icon delete-icon">✘</i>
+                            </span>
+
+                        </li>
+                        <li class="chat-item">
+                            <span class="chat-name">Chat3</span>
+                            <span class="chat-icons">
+                                <i class="icon edit-icon">✎</i>
+                                <i class="icon delete-icon">✘</i>
+                            </span>
+
+                        </li>
+                        <li class="chat-item">
+                            <span class="chat-name">Chat4</span>
+                            <span class="chat-icons">
+                                <i class="icon edit-icon">✎</i>
+                                <i class="icon delete-icon">✘</i>
+                            </span>
+
+                        </li>
+                        <li class="chat-item">
+                            <span class="chat-name">Chat5</span>
+                            <span class="chat-icons">
+                                <i class="icon edit-icon">✎</i>
+                                <i class="icon delete-icon">✘</i>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </nav>
     <div id="container-right">
+        <div id="chat">
+
+            <div class="client-message-container">
+                <div class="edit-request-button">
+                    <img class="message-icon" src="img/svg/edit.svg" alt="edit">
+                </div>
+                <div class="client-request-text-container">
+                    <div class="message-name">You</div>
+                    <div class="message-text">Zeig schwanneg?</div>
+                </div>
+            </div>
+
+            <div class="ai-message-container">
+                <div class="ai-icon-container">
+                    <img class="message-icon" src="img/svg/AIPicture.svg" alt="ai profile picture">
+                </div>
+                <div class="ai-answer-text-container">
+                    <div class="message-name">Chatus-GBTUS</div>
+                    <div class="message-text">................</div>
+                </div>
+                <div class="copy-text-button">
+                    <img class="message-icon" src="img/svg/copy.svg" alt="copy answer">
+                </div>
+            </div>
+            
+        </div>
+
         <div id="chat-input">
-            <textarea rows="1" type="text" placeholder="Enter Question"></textarea>
+            <textarea id="chat-input-bar" rows="1" type="text" placeholder="Enter Question"></textarea>
 
             <button id="sendbtn">
-                <img src="img/svg/send.svg" alt="send-btn ">
+                <img src="img/svg/send.svg" alt="send-btn" id="send-btn">
             </button>
         </div>
-        <div id="chats">
-            <div class="MessageContainer">
-                <div class="chat-icon-container">
-                    <img src="img/svg/edit.svg" alt="edit" class="ChatIcons">
-                </div>
-                <div class="client-chat">Client</div>
-            </div>
-            <div class="MessageContainer">
-                <div class="ai-chat">AI</div>
-            </div>
-        </div>
-
     </div>
 </body>
 <script src="js/index.js"></script>

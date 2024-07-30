@@ -15,3 +15,12 @@ function createChat() {
 
     navbar.appendChild(chat);
 }
+
+function debugChatLoop() {
+    let chat_nav = document.getElementById('chat-list-ul');
+    for(let i = 0; i < 50; i++) {
+        chat_nav.innerHTML += '<li class="chat-item"><span class="chat-name">'+`Chat${i}`+'</span><span class="chat-icons"><i class="icon edit-icon">✎</i><i class="icon delete-icon">✘</i></span></li>';
+    }
+}
+
+
