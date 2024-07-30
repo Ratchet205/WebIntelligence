@@ -154,14 +154,14 @@ button:hover {
     bottom: 15px
 }
 
-#chats > * {
-    outline: 0 solid orange;
+#chats .MessageContainer *{
     transition: outline-width 0.1ms
 }
 
-#chats > *:hover {
-    outline-width: 1px;
+#chats .MessageContainer *:hover {
+    filter: drop-shadow(-0.76px -0.76px 1.3px orange) drop-shadow(0.76px 0.76px 1.3px orange);
 }
+
 
 .client-chat{
     width: calc(47% + 40px);
@@ -169,18 +169,7 @@ button:hover {
     background-color: #333333;
     padding: 7px 10px;
     border-radius: 10px 10px 0 10px;
-    margin: 5px 0 5px auto;
-    margin-right: 50px;
-}
-.client-chat:hover:before {
-    content: "";
-    position: absolute;
-    transform:  translate(-140%, -26%);
-    width: 30px;
-    height: 30px;
-    background-image: url('../img/svg/edit.svg');
-    background-size: cover;
-    background-position: center;
+    margin: 5px 50px 5px auto;
 }
 .ai-chat{
     width: calc(47% + 40px);
@@ -201,18 +190,6 @@ button:hover {
     background-size: cover;
     background-position: center;
 }
-.ai-chat:hover::after {
-    content: "";
-    position: absolute;
-    left: calc(58%);
-    transform: translate(0%, -25%);
-    padding: 0.2px;
-    width: 40px;
-    height: 30px;
-    background-image: url('../img/svg/copy.svg');
-    background-size: cover;
-    background-position: center;
-}
 .chat-container {
     display: flex;
     align-items: flex-start;
@@ -223,4 +200,24 @@ button:hover {
     border-radius: 50%;
     width: 40px;
     height: 40px;
+}
+
+.chat-icon-container {
+    opacity: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.client-chat:hover ~ .chat-icon-container {
+    opacity: 1;
+}
+
+.ChatIcons {
+    position: absolute;
+    right:0;
+    margin-top: 6px;
+    margin-right: calc(47% + 115px);
+    width: 30px;
+    height: 30px;
+    background-position: center;
 }
