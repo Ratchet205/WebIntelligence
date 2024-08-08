@@ -10,7 +10,8 @@
 }
 
 ::selection {
-    background-color: #909090;
+    background-color: #7000af;
+    color: #dddddd;
 }
 
 html{
@@ -141,7 +142,7 @@ button:hover {
 }
 
 #nav-bar-buttons > * > img:hover {
-    filter: drop-shadow(0 0 0 orange) drop-shadow(1px 1px 1px orange);
+    filter: drop-shadow(0 0 0 #7000af) drop-shadow(1px 1px 1px #7000af);
 }
 
 #nav-elements {
@@ -250,7 +251,7 @@ button:hover {
 }
 
 .edit-request-button:hover {
-    filter: drop-shadow(-0.76px -0.76px 1.3px orange) drop-shadow(0.76px 0.76px 1.3px orange);
+    filter: drop-shadow(-0.76px -0.76px 1.3px #7000af) drop-shadow(0.76px 0.76px 1.3px #7000af);
 }
 
 /* Message Text */
@@ -264,7 +265,7 @@ button:hover {
 }
 
 .client-request-text-container:hover {
-    filter: drop-shadow(-0.76px -0.76px 1.3px orange) drop-shadow(0.76px 0.76px 1.3px orange);
+    filter: drop-shadow(-0.76px -0.76px 1.3px #7000af) drop-shadow(0.76px 0.76px 1.3px #7000af);
 }
 
 /**** AI Message ****/
@@ -299,7 +300,7 @@ button:hover {
 }
 
 .copy-text-button:hover {
-    filter: drop-shadow(-0.76px -0.76px 1.3px orange) drop-shadow(0.76px 0.76px 1.3px orange);
+    filter: drop-shadow(-0.76px -0.76px 1.3px #7000af) drop-shadow(0.76px 0.76px 1.3px #7000af);
 }
 
 .copy-text-button img {
@@ -317,7 +318,7 @@ button:hover {
 }
 
 .ai-answer-text-container:hover {
-    filter: drop-shadow(-0.76px -0.76px 1.3px orange) drop-shadow(0.76px 0.76px 1.3px orange);
+    filter: drop-shadow(-0.76px -0.76px 1.3px #7000af) drop-shadow(0.76px 0.76px 1.3px #7000af);
 }
 
 /* AI and Client Message Classes */
@@ -370,6 +371,14 @@ button:hover {
     width: 95px;
     position: relative;
     height: 100%;
+}
+
+#options-list li:hover > ul {
+    z-index: 999;
+    display:block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
 #navigation ul {
