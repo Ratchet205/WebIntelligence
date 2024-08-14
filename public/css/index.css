@@ -243,6 +243,7 @@ button:hover {
     width: 30px;
     height: 30px;
     padding: auto;
+    margin-right: 5px;
     transition: 0.3s;
 }
 
@@ -296,6 +297,7 @@ button:hover {
     width: 35px;
     height: 35px;
     padding: auto;
+    margin-left: 5px;
     transition: 0.3s;
 }
 
