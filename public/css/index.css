@@ -423,6 +423,7 @@ body{
     border: none;
     position: fixed;
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     background-color: transparent;
 }
 
@@ -472,19 +473,38 @@ form #forgot-passwd a{
 form #forgot-passwd a:hover{
     text-decoration: underline;
 }
-#signup-link{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 20px;
-    text-align: center;
+
+@media screen and (min-height: 924px) {
+    #signup-link{
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+        text-align: center;
+    }
+    #signup-link a{
+        color: #3498db;
+        text-decoration: none;
+    }
+    #signup-link a:hover{
+        text-decoration: underline;
+    }
 }
-#signup-link a{
-    color: #3498db;
-    text-decoration: none;
-}
-#signup-link a:hover{
-    text-decoration: underline;
+
+@media screen and (max-height: 923px) {
+    #signup-link {
+        font-size: 14px;
+    }
+    #signup-link *{
+        font-size: 14px
+    }
+    #signup-link a{
+        color: #3498db;
+        text-decoration: none;
+    }
+    #signup-link a:hover{
+        text-decoration: underline;
+    }
 }
 
 .data-input {
