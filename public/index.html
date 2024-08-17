@@ -9,6 +9,40 @@
 </head>
 <script src="js/index.js"></script>
 <body>
+    <dialog id="FormDialog" open="">
+        <fieldset>
+            <legend>Login</legend>
+            <form action="#">
+
+                <label>Name</label><br>
+                <input type="name" required class="data-input">
+                
+                <br><br>
+
+                <label>Email</label><br>
+                <input type="email" required class="data-input">
+
+                <br><br>
+
+                <label>Password</label><br>
+                <input type="password" required class="data-input">
+
+                <br><br><br><br>
+
+                <div id="forgot-passwd">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <br>
+                <div style="width: 100%; height: 100%;">
+                    <input type="submit" value="Login" id="submit-button">
+                </div>
+            <div id="signup-link">
+               Don't have an account yet? <br> <a href="#">Create account</a>
+            </div>
+            <button onclick="debugLogin()">close login</button>
+             </form>
+        </fieldset>
+    </dialog>
     <div id="container-top">
         
         <div id="navigation">

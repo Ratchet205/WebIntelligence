@@ -9,7 +9,7 @@ const server = http.createServer(app);
 
 app.use(express.static('public'));
 
-const port = 80;
+const port = 3000;
 
 server.listen(port, () => {
     console.log(`Server listening on http://localhost`);

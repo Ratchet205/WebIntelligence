@@ -23,4 +23,8 @@ function debugChatLoop() {
     }
 }
 
+function debugLogin() {
+    let dialog = document.getElementById("FormDialog");
+    dialog.removeAttribute("open");
+}
 
