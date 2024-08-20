@@ -1,0 +1,5 @@
+C:\Users\205ra\Desktop\Code\C#\HttpsServer\HttpsServer\bin\Release\net8.0\linux-x64\publish\WebHttpsServer
+C:\Users\205ra\Desktop\Code\C#\HttpsServer\HttpsServer\bin\Release\net8.0\linux-x64\publish\WebHttpsServer.dll
+C:\Users\205ra\Desktop\Code\C#\HttpsServer\HttpsServer\bin\Release\net8.0\linux-x64\publish\WebHttpsServer.deps.json
+C:\Users\205ra\Desktop\Code\C#\HttpsServer\HttpsServer\bin\Release\net8.0\linux-x64\publish\WebHttpsServer.runtimeconfig.json
+C:\Users\205ra\Desktop\Code\C#\HttpsServer\HttpsServer\bin\Release\net8.0\linux-x64\publish\WebHttpsServer.pdb

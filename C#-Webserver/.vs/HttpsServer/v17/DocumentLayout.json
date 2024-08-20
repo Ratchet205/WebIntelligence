@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\205ra\\Desktop\\Code\\C#\\HttpsServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1209413F-E66A-48BC-A3B3-32DA9E2C7F5F}|HttpsServer\\WebHttpsServer.csproj|c:\\users\\205ra\\desktop\\code\\c#\\httpsserver\\httpsserver\\server\\httpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1209413F-E66A-48BC-A3B3-32DA9E2C7F5F}|HttpsServer\\WebHttpsServer.csproj|solutionrelative:httpsserver\\server\\httpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1209413F-E66A-48BC-A3B3-32DA9E2C7F5F}|HttpsServer\\WebHttpsServer.csproj|c:\\users\\205ra\\desktop\\code\\c#\\httpsserver\\httpsserver\\webhttpsserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1209413F-E66A-48BC-A3B3-32DA9E2C7F5F}|HttpsServer\\WebHttpsServer.csproj|solutionrelative:httpsserver\\webhttpsserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1209413F-E66A-48BC-A3B3-32DA9E2C7F5F}|HttpsServer\\WebHttpsServer.csproj|c:\\users\\205ra\\desktop\\code\\c#\\httpsserver\\httpsserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1209413F-E66A-48BC-A3B3-32DA9E2C7F5F}|HttpsServer\\WebHttpsServer.csproj|solutionrelative:httpsserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WebHttpsServer.csproj",
+              "DocumentMoniker": "C:\\Users\\205ra\\Desktop\\Code\\C#\\HttpsServer\\HttpsServer\\WebHttpsServer.csproj",
+              "RelativeDocumentMoniker": "HttpsServer\\WebHttpsServer.csproj",
+              "ToolTip": "C:\\Users\\205ra\\Desktop\\Code\\C#\\HttpsServer\\HttpsServer\\WebHttpsServer.csproj",
+              "RelativeToolTip": "HttpsServer\\WebHttpsServer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-17T19:25:06.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HttpServer.cs",
+              "DocumentMoniker": "C:\\Users\\205ra\\Desktop\\Code\\C#\\HttpsServer\\HttpsServer\\server\\HttpServer.cs",
+              "RelativeDocumentMoniker": "HttpsServer\\server\\HttpServer.cs",
+              "ToolTip": "C:\\Users\\205ra\\Desktop\\Code\\C#\\HttpsServer\\HttpsServer\\server\\HttpServer.cs",
+              "RelativeToolTip": "HttpsServer\\server\\HttpServer.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAswCsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T18:20:44.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\205ra\\Desktop\\Code\\C#\\HttpsServer\\HttpsServer\\Program.cs",
+              "RelativeDocumentMoniker": "HttpsServer\\Program.cs",
+              "ToolTip": "C:\\Users\\205ra\\Desktop\\Code\\C#\\HttpsServer\\HttpsServer\\Program.cs",
+              "RelativeToolTip": "HttpsServer\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T18:18:59.971Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
