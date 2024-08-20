@@ -9,19 +9,21 @@
 </head>
 <script src="js/index.js"></script>
 <body>
-    <dialog id="FormDialog" open="">
+    <div id="debugdiv">
+        <button onclick="debugLogin()">close login</button>
+        <button onclick="debugChatLoop()">add chats</button>
+    </div>
+
+    <dialog id="FormDialog" open>
         <fieldset>
             <legend>Login</legend>
             <form action="#">
-                <div id="signup-link">
-                    Don't have an account yet? <br> <a href="#">Create account</a>
-                </div>
-
+                <!--
                 <label>Name</label><br>
                 <input type="name" required class="data-input">
                 
                 <br><br>
-
+                -->
                 <label>Email</label><br>
                 <input type="email" required class="data-input">
 
@@ -36,11 +38,13 @@
                     <a href="#">Forgot Password?</a>
                 </div>
                 <br>
-                <div style="width: 100%; height: 100%;">
-                    <input type="submit" value="Login" id="submit-button">
+                <input type="submit" value="Login" id="submit-button">
+
+                <br>
+                <div id="signup-link">
+                    Don't have an account yet? <br> <a href="#">Create account</a>
                 </div>
-            <button onclick="debugLogin()">close login</button>
-             </form>
+            </form>
         </fieldset>
     </dialog>
     <div id="container-top">
@@ -81,7 +85,6 @@
     <nav id="container-left">
         <div id="nav-bar-buttons">
             <button id="collapseBar"><img src="img/svg/collapse.svg" alt="Collapse Bar" style="width: 100%; height: 100%;"></button>
-            <button id="testbutton" onclick="debugChatLoop()" style="color: black; position: absolute; top: 50%; left: 50%;">add chats</button>
             <button id="addChat" onclick="addChat()"><img src="img/svg/addNewChat.svg" alt="Create a Chat" style="width: 100%; height: 100%;"></button>
         </div>
         

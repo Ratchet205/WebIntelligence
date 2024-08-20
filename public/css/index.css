@@ -435,24 +435,27 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50px;
-    padding: 50px;
-    background-color: #1d1d1d;
+    padding-left: 50px;
+    padding-right: 50px;
     overflow-y: scroll;
     scrollbar-width: none;
     scroll-behavior: smooth;
+    background-color: #1b1b1b;
 }
 
 #FormDialog fieldset legend {
     font-size: 22.4px;
 }
 
+
 #FormDialog fieldset form {
     font-size: 24px;
+    padding: 5px;
 }
 
 #submit-button {
-    height: 100%;
     width: 140px;
+    height: 31px;
     background: linear-gradient(0.25turn,#7000af,#50008f);
     border-radius: 4px;
     padding: 1.9px;
@@ -474,7 +477,11 @@ form #forgot-passwd a:hover{
     text-decoration: underline;
 }
 
-@media screen and (min-height: 924px) {
+@media screen and (min-height: 651px) {
+    #FormDialog fieldset {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     #signup-link{
         position: fixed;
         left: 50%;
@@ -491,9 +498,10 @@ form #forgot-passwd a:hover{
     }
 }
 
-@media screen and (max-height: 923px) {
+@media screen and (max-height: 650px) {
     #signup-link {
         font-size: 14px;
+        text-align: center;
     }
     #signup-link *{
         font-size: 14px
@@ -510,14 +518,22 @@ form #forgot-passwd a:hover{
 .data-input {
     margin-left: 50%;
     transform: translateX(-50%);
-    width: 98%;
+    width: 100%;
     outline: none;
     padding: 3px;
     border-radius: 5px;
     background-color: #2b2b2b;
     border: 2px solid transparent;
+    height: 21px;
 }
 
 .data-input:focus {
     border: 2px solid #7000af;
+}
+
+#debugdiv {
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
 }
