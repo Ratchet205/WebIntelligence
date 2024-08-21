@@ -416,7 +416,7 @@ body{
 }
 
 
-#FormDialog {
+.hoverdialog {
     z-index: 6;
     width: 100%;
     height: 100%;
@@ -427,7 +427,7 @@ body{
     background-color: transparent;
 }
 
-#FormDialog fieldset {
+.hoverdialog fieldset {
     position: fixed;
     width: 20%;
     height: 57%;
@@ -443,12 +443,12 @@ body{
     background-color: #1b1b1b;
 }
 
-#FormDialog fieldset legend {
+.hoverdialog fieldset legend {
     font-size: 22.4px;
 }
 
 
-#FormDialog fieldset form {
+.hoverdialog fieldset form {
     font-size: 24px;
     padding: 5px;
 }

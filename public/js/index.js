@@ -1,6 +1,7 @@
 let chatCounter = 0;
 const IDbegin = "ChatID-";
 
+
 function createChat() {
     let ChatCount = chatCounter++;
     let chat = document.createElement("button");
@@ -24,7 +25,12 @@ function debugChatLoop() {
 }
 
 function debugLogin() {
-    let dialog = document.getElementById("FormDialog");
+    let dialog = document.getElementById("logindialog");
     dialog.removeAttribute("open");
 }
-
+function openRegistration() {
+    let login = document.getElementById("logindialog");
+    login.removeAttribute("open");
+    let registration = document.getElementById("registrationdialog");
+    registration.setAttribute("open", "")
+}

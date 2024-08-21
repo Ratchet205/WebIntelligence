@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | WebIntelligence</title>
     <link rel="stylesheet" href="css\index.css">
+    <meta name="google-signin-client_id" content="334094857641-ef4sau3ua1clm53gm6jcashbtkl3mpuf.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <script src="js/index.js"></script>
 <body>
@@ -14,7 +16,7 @@
         <button onclick="debugChatLoop()">add chats</button>
     </div>
 
-    <dialog id="FormDialog" open>
+    <dialog id="logindialog" class="hoverdialog" open>
         <fieldset>
             <legend>Login</legend>
             <form action="#">
@@ -39,11 +41,41 @@
                 </div>
                 <br>
                 <input type="submit" value="Login" id="submit-button">
+                
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
 
                 <br>
                 <div id="signup-link">
-                    Don't have an account yet? <br> <a href="#">Create account</a>
+                    Don't have an account yet? <br> <a href="#" onclick="openRegistration()">Create account</a>
                 </div>
+            </form>
+        </fieldset>
+    </dialog>
+    
+    <dialog id="registrationdialog" class="hoverdialog">
+        <fieldset>
+            <legend>Registration</legend>
+            <form action="#">
+                <label>Name</label><br>
+                <input type="name" required class="data-input">
+                
+                <br><br>
+                <label>Email</label><br>
+                <input type="email" required class="data-input">
+
+                <br><br>
+
+                <label>Password</label><br>
+                <input type="password" required class="data-input">
+
+                <br><br>
+                <label>Repeat Password</label><br>
+                <input type="password" required class="data-input">
+
+
+                <br><br>
+                <br>
+                <input type="submit" value="Register" id="submit-button">
             </form>
         </fieldset>
     </dialog>
