@@ -164,6 +164,18 @@ namespace WebHttpsServer.server
                 }
             });
         }
+
+        public static void KeepAliveUntilKey(char? c)
+        {
+            while(true)
+            {
+                if(Console.ReadKey(true).KeyChar == c || c == null)
+                {
+                    Environment.Exit(0);
+                }
+            }
+        }
+
         /// <summary>
         /// Stops the Server if already running.
         /// </summary>

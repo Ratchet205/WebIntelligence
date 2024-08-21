@@ -43,10 +43,7 @@ namespace WebHttpsServer
                 WebServer.Start();
 
                 Console.WriteLine("Server started. Press any key to stop...");
-                Console.ReadKey(true);
-
-                // Stopping the server
-                WebServer.Stop();
+                WebServer.KeepAliveUntilKey('x');
             }
             catch (Exception ex)
             {
