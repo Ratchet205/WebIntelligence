@@ -1,6 +1,5 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "+lLgsz/Sp5M=",
   "success": true,
   "projectFilePath": "C:\\Users\\205ra\\Desktop\\Code\\GitRepositories\\WebIntelligence\\C#-Webserver\\HttpsServer\\WebHttpsServer.csproj",
@@ -15,19 +14,6 @@
     "C:\\Users\\205ra\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.8\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.8.nupkg.sha512",
     "C:\\Users\\205ra\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.8\\microsoft.netcore.app.runtime.win-x64.8.0.8.nupkg.sha512",
     "C:\\Users\\205ra\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-x64\\8.0.8\\microsoft.aspnetcore.app.runtime.linux-x64.8.0.8.nupkg.sha512"
-=======
-  "dgSpecHash": "GpsG8Dlq/ls=",
-  "success": true,
-  "projectFilePath": "D:\\Stuff\\Development\\WebDev\\WebIntelligence\\WebIntelligence\\C#-Webserver\\HttpsServer\\WebHttpsServer.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Adrian\\.nuget\\packages\\mimetypesmap\\1.0.8\\mimetypesmap.1.0.8.nupkg.sha512",
-    "C:\\Users\\Adrian\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-x64\\7.0.20\\microsoft.netcore.app.runtime.linux-x64.7.0.20.nupkg.sha512",
-    "C:\\Users\\Adrian\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\7.0.20\\microsoft.netcore.app.host.linux-x64.7.0.20.nupkg.sha512",
-    "C:\\Users\\Adrian\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.20\\microsoft.aspnetcore.app.runtime.win-x64.7.0.20.nupkg.sha512",
-    "C:\\Users\\Adrian\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.20\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.20.nupkg.sha512",
-    "C:\\Users\\Adrian\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.20\\microsoft.netcore.app.runtime.win-x64.7.0.20.nupkg.sha512",
-    "C:\\Users\\Adrian\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-x64\\7.0.20\\microsoft.aspnetcore.app.runtime.linux-x64.7.0.20.nupkg.sha512"
->>>>>>> e1293a3650c0ac5ec6e20be8cb49f47e326d0f7c
   ],
   "logs": []
 }
