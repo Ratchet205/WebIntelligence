@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\205ra\\Desktop\\Code\\GitRepositories\\WebIntelligence\\C#-Webserver\\",
+  "WorkspaceRootPath": "D:\\Stuff\\Development\\WebDev\\WebIntelligence\\WebIntelligence\\C#-Webserver\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1209413F-E66A-48BC-A3B3-32DA9E2C7F5F}|HttpsServer\\WebHttpsServer.csproj|c:\\users\\205ra\\desktop\\code\\gitrepositories\\webintelligence\\c#-webserver\\httpsserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1209413F-E66A-48BC-A3B3-32DA9E2C7F5F}|HttpsServer\\WebHttpsServer.csproj|solutionrelative:httpsserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1209413F-E66A-48BC-A3B3-32DA9E2C7F5F}|HttpsServer\\WebHttpsServer.csproj|d:\\stuff\\development\\webdev\\webintelligence\\webintelligence\\c#-webserver\\httpsserver\\server\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1209413F-E66A-48BC-A3B3-32DA9E2C7F5F}|HttpsServer\\WebHttpsServer.csproj|solutionrelative:httpsserver\\server\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1209413F-E66A-48BC-A3B3-32DA9E2C7F5F}|HttpsServer\\WebHttpsServer.csproj|c:\\users\\205ra\\desktop\\code\\gitrepositories\\webintelligence\\c#-webserver\\httpsserver\\server\\webserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1209413F-E66A-48BC-A3B3-32DA9E2C7F5F}|HttpsServer\\WebHttpsServer.csproj|solutionrelative:httpsserver\\server\\webserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1209413F-E66A-48BC-A3B3-32DA9E2C7F5F}|HttpsServer\\WebHttpsServer.csproj|d:\\stuff\\development\\webdev\\webintelligence\\webintelligence\\c#-webserver\\httpsserver\\server\\twofactorauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1209413F-E66A-48BC-A3B3-32DA9E2C7F5F}|HttpsServer\\WebHttpsServer.csproj|solutionrelative:httpsserver\\server\\twofactorauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "WebServer.cs",
-              "DocumentMoniker": "C:\\Users\\205ra\\Desktop\\Code\\GitRepositories\\WebIntelligence\\C#-Webserver\\HttpsServer\\server\\WebServer.cs",
-              "RelativeDocumentMoniker": "HttpsServer\\server\\WebServer.cs",
-              "ToolTip": "C:\\Users\\205ra\\Desktop\\Code\\GitRepositories\\WebIntelligence\\C#-Webserver\\HttpsServer\\server\\WebServer.cs",
-              "RelativeToolTip": "HttpsServer\\server\\WebServer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Title": "TwoFactorAuthService.cs",
+              "DocumentMoniker": "D:\\Stuff\\Development\\WebDev\\WebIntelligence\\WebIntelligence\\C#-Webserver\\HttpsServer\\server\\TwoFactorAuthService.cs",
+              "RelativeDocumentMoniker": "HttpsServer\\server\\TwoFactorAuthService.cs",
+              "ToolTip": "D:\\Stuff\\Development\\WebDev\\WebIntelligence\\WebIntelligence\\C#-Webserver\\HttpsServer\\server\\TwoFactorAuthService.cs",
+              "RelativeToolTip": "HttpsServer\\server\\TwoFactorAuthService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T19:46:10.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-21T01:59:28.107Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\205ra\\Desktop\\Code\\GitRepositories\\WebIntelligence\\C#-Webserver\\HttpsServer\\Program.cs",
-              "RelativeDocumentMoniker": "HttpsServer\\Program.cs",
-              "ToolTip": "C:\\Users\\205ra\\Desktop\\Code\\GitRepositories\\WebIntelligence\\C#-Webserver\\HttpsServer\\Program.cs",
-              "RelativeToolTip": "HttpsServer\\Program.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwB0AAABTAAAAAAAAAA==",
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "D:\\Stuff\\Development\\WebDev\\WebIntelligence\\WebIntelligence\\C#-Webserver\\HttpsServer\\server\\AccountService.cs",
+              "RelativeDocumentMoniker": "HttpsServer\\server\\AccountService.cs",
+              "ToolTip": "D:\\Stuff\\Development\\WebDev\\WebIntelligence\\WebIntelligence\\C#-Webserver\\HttpsServer\\server\\AccountService.cs",
+              "RelativeToolTip": "HttpsServer\\server\\AccountService.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAqwFgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T18:18:59.971Z",
+              "WhenOpened": "2024-08-21T01:59:04.728Z",
               "EditorCaption": ""
             }
           ]
