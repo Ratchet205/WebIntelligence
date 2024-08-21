@@ -33,22 +33,26 @@ namespace WebHttpsServer.server
 
             int id = userData.Item1;
             string name = userData.Item2;
-            byte[] hashedPasswordDataBase = Encoding.ASCII.GetBytes(userData.Item3);
+            byte[] hashedPasswordDataBase = Encoding.UTF8.GetBytes(userData.Item3);
             byte[] salt = userData.Item4;
             bool uses2FA = userData.Item5;
 
             byte[] hashedPasswordCode = HashPassword(password, salt);
             byte[] accountHash = GenerateAccountHash(password, name, id);
 
-            password = String.Empty;
+            password = string.Empty;
 
             if (!CompareHashes(hashedPasswordDataBase, hashedPasswordCode)) return LoginAnswer.WrongPassword;
 
             if (!uses2FA) return LoginAnswer.LoginSuccess;
 
-            if(TwoFactorAuthService.ValidateTwoFactorCode(accountHash)) return LoginAnswer.LoginSuccess;
+            if(!TwoFactorAuthService.ValidateTwoFactorCode(accountHash)) return LoginAnswer.LoginError;
 
-            return LoginAnswer.LoginError;
+
+            string sessionToken = GenerateSessionToken(hashedPasswordDataBase);
+            FrontEndInteractionService.SetSessionCookie(sessionToken);
+
+            return LoginAnswer.LoginSuccess;
         }
 
         private static byte[] GenerateAccountHash(string password, string name, int id)
@@ -57,8 +61,8 @@ namespace WebHttpsServer.server
 
             byte[] accountStringBytes = Encoding.UTF8.GetBytes(accountString);
             byte[] hashedBytes = SHA256.HashData(accountStringBytes);
+
             return hashedBytes;
-            
         }
 
         private static byte[] HashPassword(string password, byte[] salt)
@@ -98,6 +102,59 @@ namespace WebHttpsServer.server
             byte[] salt = new byte[8];
             rng.GetBytes(salt);
             return salt;
+        }
+
+        private static string GenerateHMACToken(string hexToken, byte[] hashedPassword)
+        {
+            byte[] key = new byte[32];
+            Array.Copy(hashedPassword, 0, key, 0, 32);
+
+            var hmac = new HMACSHA256(key);
+            byte[] hash = hmac.ComputeHash(Encoding.UTF8.GetBytes(hexToken));
+
+            return BitConverter.ToString(hash).Replace("-", "").ToLower();
+        }
+
+        private static string GenerateSessionToken(byte[] passwordHash)
+        {
+            // hexToken -> actual session token
+            // hmacToken -> hash of this session token using hashed password as key
+            string hexToken;
+            string hmacToken;
+
+
+            var rng = RandomNumberGenerator.Create();
+
+            byte[] randomBytes = new byte[16];
+            rng.GetBytes(randomBytes);
+
+            var sb = new StringBuilder(randomBytes.Length * 2);
+            foreach (byte b in randomBytes)
+            {
+                sb.AppendFormat("{0:x2}", b);
+            }
+            hexToken = sb.ToString();
+
+
+            hmacToken = GenerateHMACToken(hexToken, passwordHash);
+
+
+            return $"{hexToken}.{hmacToken}";
+        }
+
+        public static bool ValidateSessionToken(string sessionToken, byte[] hashedPassword)
+        {
+            string[] tokenParts = sessionToken.Split('.');
+            if (tokenParts.Length != 2 ) return false;
+
+            // hexToken -> actual session token
+            // hmacToken -> hash of this session token using hashed password as key
+            string hexToken = tokenParts[0];
+            string hmacToken = tokenParts[1];
+
+            string expectedHMACToken = GenerateHMACToken(hexToken, hashedPassword);
+
+            return hmacToken == expectedHMACToken;
         }
     }
 }

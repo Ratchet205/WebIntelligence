@@ -13,5 +13,11 @@ namespace WebHttpsServer.server
             // interact with frontend for 2FA code request
             throw new NotImplementedException();
         }
+
+        public static bool SetSessionCookie(string sessionToken)
+        {
+            // interaction with client setting session cookie using session Token
+            throw new NotImplementedException();
+        }
     }
 }

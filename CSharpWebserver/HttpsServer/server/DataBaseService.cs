@@ -13,14 +13,15 @@ namespace WebHttpsServer.server
 
     public static class DataBaseService
     {
+
         /// <summary>
         /// Uses a primary key to get other user data out of a database.
         /// </summary>
         /// <param name="email">Uses the email as a primary key.</param>
         /// <returns>Tuple containing (id, name, hashed password, salt, uses 2fa)</returns>
-        public static (int, string, string, byte[],bool) GetUserData(string email)
+        public static (int, string, string, byte[], bool) GetUserData(string email)
         {
-            //byte[] salt = Encoding.ASCII.GetBytes(saltString);
+            //byte[] salt = Encoding.UTF8.GetBytes(saltString);
             throw new NotImplementedException();
         }
 
