@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "WebHttpsServer": {
-      "commandName": "Project",
-      "commandLineArgs": "lorem_ipsum.json"
-    }
-  }
-}

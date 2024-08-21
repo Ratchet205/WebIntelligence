@@ -1,2 +1,0 @@
-C:\Users\205ra\Desktop\Code\C#\HttpsServer\HttpsServer\bin\Release\net8.0\win-x64\publish\WebHttpsServer.pdb
-C:\Users\205ra\Desktop\Code\C#\HttpsServer\HttpsServer\bin\Release\net8.0\win-x64\publish\WebHttpsServer.exe

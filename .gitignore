@@ -17,6 +17,9 @@
 mono_crash.*
 
 # Build results
+CSharpWebserver/HttpsServer/bin/
+CSharpWebserver/HttpsServer/obj/
+CSharpWebserver/HttpsServer/Properties/
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
@@ -34,6 +37,7 @@ bld/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
+CSharpWebserver/.vs/
 # Uncomment if you have tasks that create the project's static files in wwwroot
 #wwwroot/
 
