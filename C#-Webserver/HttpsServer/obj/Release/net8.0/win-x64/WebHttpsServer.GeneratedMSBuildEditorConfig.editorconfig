@@ -12,6 +12,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebHttpsServer
-build_property.ProjectDir = C:\Users\205ra\Desktop\Code\C#\HttpsServer\HttpsServer\
+build_property.ProjectDir = C:\Users\205ra\Desktop\Code\GitRepositories\WebIntelligence\C#-Webserver\HttpsServer\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

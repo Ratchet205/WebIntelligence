@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\205ra\\Desktop\\Code\\C#\\HttpsServer\\HttpsServer\\WebHttpsServer.csproj": {}
+    "C:\\Users\\205ra\\Desktop\\Code\\GitRepositories\\WebIntelligence\\C#-Webserver\\HttpsServer\\WebHttpsServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\205ra\\Desktop\\Code\\C#\\HttpsServer\\HttpsServer\\WebHttpsServer.csproj": {
+    "C:\\Users\\205ra\\Desktop\\Code\\GitRepositories\\WebIntelligence\\C#-Webserver\\HttpsServer\\WebHttpsServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\205ra\\Desktop\\Code\\C#\\HttpsServer\\HttpsServer\\WebHttpsServer.csproj",
+        "projectUniqueName": "C:\\Users\\205ra\\Desktop\\Code\\GitRepositories\\WebIntelligence\\C#-Webserver\\HttpsServer\\WebHttpsServer.csproj",
         "projectName": "WebHttpsServer",
-        "projectPath": "C:\\Users\\205ra\\Desktop\\Code\\C#\\HttpsServer\\HttpsServer\\WebHttpsServer.csproj",
+        "projectPath": "C:\\Users\\205ra\\Desktop\\Code\\GitRepositories\\WebIntelligence\\C#-Webserver\\HttpsServer\\WebHttpsServer.csproj",
         "packagesPath": "C:\\Users\\205ra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\205ra\\Desktop\\Code\\C#\\HttpsServer\\HttpsServer\\obj\\",
+        "outputPath": "C:\\Users\\205ra\\Desktop\\Code\\GitRepositories\\WebIntelligence\\C#-Webserver\\HttpsServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,6 +53,14 @@
             "MimeTypesMap": {
               "target": "Package",
               "version": "[1.0.8, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.3.7, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

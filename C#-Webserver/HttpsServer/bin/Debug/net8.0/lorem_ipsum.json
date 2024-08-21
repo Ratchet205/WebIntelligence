@@ -1,0 +1,13 @@
+{
+    "Config" : {
+      "SetUp" : {
+        "StaticFolder": "../../../../../public",
+        "Prefixes": ["http://localhost:80/", "http://192.168.2.106:80/"]
+      },
+      "Aliases": {
+        "/login": "../../../../../private/html/login.html",
+        "/logoff": "../../../../../private/logoff.html",
+        "/register": "../../../../../private/register.html"
+      }
+    }
+}
