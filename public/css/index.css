@@ -537,3 +537,33 @@ form #forgot-passwd a:hover{
     display: flex;
     flex-direction: column;
 }
+#googlesignup {
+    margin-top: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(77, 74, 74, 0.5);
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+    
+}
+#googlesignup:hover{
+    background-color: #444;
+    border-color: #7000af;
+    filter: none;
+}
+#googlesignup img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    filter: brightness(0);
+    transition: filter 0.3s;
+}
+#googlesignup:hover img {
+    filter: none;
+}
+#googlesignup:hover span{
+    color: #9c37d6
+}
