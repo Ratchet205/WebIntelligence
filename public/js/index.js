@@ -26,7 +26,7 @@ function debugChatLoop() {
 
 function debugLogin() {
     let dialog = document.getElementById("logindialog");
-    dialog.removeAttribute("open");
+    dialog.toggleAttribute("open");
 }
 function openRegistration() {
     let login = document.getElementById("logindialog");
